@@ -1,4 +1,4 @@
-import logo from './logo.png';
+import logo from './logo.svg';
 import video_banner from './home-page-banner.mp4';
 import people from './people.png';
 import people_org from './people-org.png';

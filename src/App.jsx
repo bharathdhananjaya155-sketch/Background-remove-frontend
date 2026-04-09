@@ -10,10 +10,18 @@ import BuyCredits from "./pages/BuyCredits.jsx";
 
 const App = () => {
     return (
-        <div>
+        <div className="min-h-screen bg-[#0a0f1a]">
             <UserSyncHandler />
             <Menubar />
-            <Toaster />
+            <Toaster
+                toastOptions={{
+                    style: {
+                        background: '#1a2235',
+                        color: '#f1f5f9',
+                        border: '1px solid rgba(20, 184, 166, 0.2)',
+                    },
+                }}
+            />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/pricing" element={<BuyCredits />} />

@@ -13,18 +13,18 @@ const BgSlider = () => {
     return (
         <div className="mb-16 relative">
             {/* Section title */}
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-12 text-center">
                 Stunning quality.
             </h2>
 
             {/* Category selector */}
             <div className="flex justify-center mb-10 flex-wrap">
 
-                <div className="inline-flex gap-4 bg-gray-100 p-2 rounded-full flex-wrap justify-center">
+                <div className="inline-flex gap-4 bg-[#1a2235] p-2 rounded-full flex-wrap justify-center border border-white/5">
 
                     {categories.map((category) => (
                         <button key={category}
-                                className={`px-6 py-2 rounded-full font-medium ${activeCategory === category ? 'bg-white text-gray-800 shadow-sm': 'text-gray-600 hover:bg-gray-200'}`}
+                                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${activeCategory === category ? 'bg-gradient-to-r from-teal-500 to-cyan-500 text-white shadow-lg shadow-teal-500/20': 'text-slate-400 hover:text-teal-400 hover:bg-white/5'}`}
                         onClick={() => setActiveCategory(category)}>
                             {category}
                         </button>
@@ -36,7 +36,7 @@ const BgSlider = () => {
             </div>
 
             {/* image comparision slider */}
-            <div className="relative w-full max-w-4xl overflow-hidden m-auto rounded-xl shadow-lg">
+            <div className="relative w-full max-w-4xl overflow-hidden m-auto rounded-xl shadow-lg border border-white/5">
                 <img src={assets.people_org}
                      alt="original image"
                      style={{ clipPath: `inset(0 ${100.2 - sliderPosition}% 0 0)` }} />

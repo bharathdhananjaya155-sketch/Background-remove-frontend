@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <!-- Eraser Tool -->
+  <path d="M43.1 11.2C40.6 8.7 36.5 8.7 34 11.2L11.2 34C8.7 36.5 8.7 40.6 11.2 43.1L20.9 52.8C23.4 55.3 27.5 55.3 30 52.8L52.8 30C55.3 27.5 55.3 23.4 52.8 20.9L43.1 11.2Z" fill="#1a2235" stroke="url(#grad)" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Eraser Tip -->
+  <path d="M34 11.2L11.2 34L25 47.8L47.8 25L34 11.2Z" fill="url(#grad)"/>
+  <!-- Sparkles -->
+  <path d="M52 16L54 10L60 8L54 6L52 0L50 6L44 8L50 10L52 16Z" fill="#06b6d4"/>
+  <path d="M12 20L13 14L19 13L13 12L12 6L11 12L5 13L11 14L12 20Z" fill="#14b8a6"/>
+</svg>
